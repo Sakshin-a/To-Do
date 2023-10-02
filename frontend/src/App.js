@@ -1,12 +1,19 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
+import Register from "./pages/Register";
+import Welcome from "./pages/Welcome";
 
 function App() {
   return (
     <div className="App">
       <Router>
           <Switch>
-            <Route exact path="/">Hi</Route>
+            <Route exact path="/">
+              <Welcome/>
+            </Route>
+            <Route exact path="/register">
+              <Register/>
+            </Route>
           </Switch>
       </Router>
     </div>
